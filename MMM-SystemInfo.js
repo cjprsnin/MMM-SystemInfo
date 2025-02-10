@@ -21,7 +21,7 @@ Module.register("MMM-SystemInfo", {
         showDiskUsage: false,
         diskUsageCommand: "df --output=pcent / | tail -n 1 | tr -d '% '",
         showCpuTemperature: false,
-        cpuTemperatureCommand: 'echo "$(cat /sys/class/thermal/thermal_zone0/temp) / 1000" | bc',
+        cpuTemperatureCommand: 'echo "$(cat /sys/class/thermal/thermal_zone0/temp)" | bc',
         showInternet: true,
         showPrivateIp: true,
         showVolume: false,
